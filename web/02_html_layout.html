@@ -73,11 +73,14 @@
                 <input type="checkbox" name="" value="">체크박스1</input>
                 <input type="checkbox" name="" value="">체크박스2</input><br>
 
-        <!-- 8. textarea 여러줄을 입력 받을수 있는 엘리먼트 -->
+        <!-- 8. textarea : 여러줄을 입력 받을수 있는 엘리먼트 -->
+            <!--cols : 열 길이, rows : 행 길이 설정-->
             <textarea name="" id="" cols="30" rows="10" style="resize:none;"></textarea><br>
 
         <!-- 9. select, option : 여러가지 옵션을 선택할수 있는 엘리먼트 -->
+            <!-- select : 셀렉션 만들기, option : 셀렉션 안에 여러 옵션 만든다.-->
             <!-- select>option[value=$]{option $}*3 -->
+
             <select name="" id="">
                 <option value="1">option 1</option>
                 <option value="2">option 2</option>
@@ -85,7 +88,7 @@
             </select><br>
 
         <!-- 10. button : 버튼을 나타내는 엘리먼트 -->
+            <!-- onclick = 클릭했을때 어떤 것이 나타나는지 알려준다. -->
             <button type="button" name="button" onclick="javascript:(alert('hello'))">Click</button>
-
     </body>
 </html>
