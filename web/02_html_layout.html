@@ -6,7 +6,10 @@
     </head>
     <body>
 
-        <!-- 1. div : 레이아웃을 나타내는 엘리먼트 -->
+        <!-- 1. div : 레이아웃 ; The <div> tag defines a division or a section in an HTML document. -->
+            <!--
+            - style attribute로 레이아웃 스타일 만들 수 있다.
+            -->
             <div style="height : 50px; background-color : red;">
                 <p>dss0</p>
                 <p>dss1</p>
@@ -17,15 +20,33 @@
         <!-- 2. table : 테이블 모양을 나타낼 때 사용하는 엘리먼트 -->
 
             <!--emmet : table>caption{테이블제목}+thead>tr>th{thead$}*2^^tbody>tr>th{tbody$}*2-->
+            <!--table, caption, thread, tbody, tr, th -->
+            <!--
+            - table : 테이블 만들기 시작
+            - caption : 테이블의 제목
+            - thread : 테이블 컬럼명 (group header content)
+            - tbody : 테이블의 밸류값들이 들어가는 곳 (group the body content)
+            - tr : 행 데이터가 시작 (row)
+            - th : 셀을 정의 (header cell)
+            -->
             <table>
                 <caption>테이블제목</caption>
                 <thead>
                     <tr>
                         <th>thead1</th>
                         <th>thead2</th>
+                        <th>thread3</th>
                     </tr>
                 </thead>
                 <tbody>
+                    <tr>
+                        <th>tbody1</th>
+                        <th>tbody2</th>
+                    </tr>
+                    <tr>
+                        <th>tbody1</th>
+                        <th>tbody2</th>
+                    </tr>
                     <tr>
                         <th>tbody1</th>
                         <th>tbody2</th>
@@ -34,19 +55,26 @@
             </table>
 
         <!-- 3. ul, li : 리스트 엘리먼트 -->
+        <!--
+        The <ul> tag defines an unordered (bulleted) list.
+        The <li> tag defines a list item.
+        -->
             <ul>
                 <li>ul_li_1</li>
                 <li>ul_li_2</li>
                 <li>ul_li_3</li>
             </ul>
 
-        <!--4. a : 링크 엘리먼트 -->
-            <!-- href : 클릭했을때 이동되는 url 링크 -->
+        <!--4. a : 링크; The <a> tag defines a hyperlink, which is used to link from one page to another.-->
+            <!-- href : url주소; The href attribute specifies the URL of the page the link goes to.-->
+            <!-- target : 어떻게 열건지; The target attribute specifies where to open the linked document.
+            possible target option : _blank|_self|_parent|_top|framename
+            -->
             <a href="http://google.com target="_blank">Google</a>
 
 
         <!--5. img : 이미지 엘리먼트 -->
-            <img style="width: 200px;" src="http://cdn.www.fastcampus.co.kr/wp-content/uploads/2017/11/fastcampus_logo_positive-1.png" alt="패스트 캠퍼스" />
+            <img style="width: 200px;" src="http://cdn.www.fastcampus.co.kr/wp-content/uploads/2017/11/fastcampus_logo_positive-1.png" alt="패스트 캠퍼스"></image>
             <!--src : 이미지 데이터 url, alt = 이미지 안나올때 출력할 메시지 -->
 
         <!-- 6. iframe : 아이프레임 엘리먼트, 웹페이지 안에 웹페이지를 보여주는 엘리먼트 -->
