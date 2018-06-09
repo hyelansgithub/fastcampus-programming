@@ -2,13 +2,13 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <img width="150" src="https://post-phinf.pstatic.net/MjAxODAxMjBfMTMz/MDAxNTE2NDQzNDIwNDA2.4eQzwUjuREzQtta989nW-1uns0NQbR9GHp5VMweQLJQg.ylyxZbDG9695XBFJuGsKkvOuov9WUCRg2Yo8gDCfqPog.PNG/IDToM3Nlfmg1L9UVcDN81OR0ziSs.jpg" alt="이미지를 불러올 수 없습니다.">
+        <a href="https://www.naver.com"><img width="150" src="https://post-phinf.pstatic.net/MjAxODAxMjBfMTMz/MDAxNTE2NDQzNDIwNDA2.4eQzwUjuREzQtta989nW-1uns0NQbR9GHp5VMweQLJQg.ylyxZbDG9695XBFJuGsKkvOuov9WUCRg2Yo8gDCfqPog.PNG/IDToM3Nlfmg1L9UVcDN81OR0ziSs.jpg" alt="이미지를 불러올 수 없습니다."></a>
         <title>네이버 실시간 급상승</title>
         <style media="screen">
-            li.list>a>span.title{
+            li.list>a>span.title {
                 font-weight: bold; font-style: nomal;
             }
-            em.num{
+            em.num {
                 color:green;
             }
 
@@ -16,11 +16,31 @@
                 font-size: 25px
             }
 
-            /*김비서가 왜그럴까 만 빨간색으로 나타내보기
-            .rank_list:first-child>a>span{
-                color:red
-            }*/
-            
+            h2 {
+                margin-left: 20px; font-size: 30px;
+            }
+
+            a[herf = "https://search.naver.com/search.naver?where=nexearch&query=%EA%B0%90%EC%8A%A4%ED%8A%B8&ie=utf8&sm=tab_lve"]{
+                color:#1f6053;
+            }
+
+            /*방문하지 않은 링크만*/
+            a:link {
+                color:red;
+            }
+
+            /*방문한 링크만*/
+            a:visited {
+                color:blue
+            }
+
+            /*세번째 항목만 테두리 만들기(동작안함)*/
+            ul.rank_list:nth-of-type(3){
+                border: 1px solid black;
+            }
+
+
+
         </style>
     </head>
     <body>
