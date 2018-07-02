@@ -253,7 +253,6 @@ function disp() {
 disp();
 console.log(a);
 
-
 // 즉시 실행 함수, 익명함수
 // 자바스크립트는 프론트엔드 언어입니다.
 // 프론트엔드 언어는 코드가 다 노출 된다.
@@ -277,7 +276,8 @@ console.log(a);
 }());
 
 // callback
-//  콜백 함수 - 함수의 아규먼트로 함수를 받아서 모든 코드를 실행한 후에 아규먼트로 받은 함수를 실행
+
+// 콜백 함수 - 함수의 아규먼트로 함수를 받아서 모든 코드를 실행한 후에 아규먼트로 받은 함수를 실행
 function getData(callback, num1, num2){
     var result = num1 + num2;
     callback(result);   // 코드가 끝나고 특정 함수를 실행 한다.
